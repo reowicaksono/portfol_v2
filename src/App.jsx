@@ -11,8 +11,8 @@ import Ceritification from './views/certification/CertificationView.jsx';
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Waktu animasi dalam ms
-      once: true, // Animasi hanya muncul sekali saat scroll
+      duration: 1000, 
+      once: true,
     });
   }, []);
 

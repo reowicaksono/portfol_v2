@@ -13,7 +13,6 @@ const Navbar = () => {
         REO WICAKSONO
       </button>
 
-      {/* Menu untuk Desktop */}
       <div className="hidden md:flex flex-1 justify-center">
         <ul className="flex gap-12 text-gray-300 text-2xl font-medium">
           {["Home", "About", "Experience", "Portfolio", "Certification"].map((item, index) => (
@@ -48,7 +47,6 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Tombol Menu untuk Mobile */}
       <button
         className="md:hidden text-white text-2xl focus:outline-none cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
@@ -56,7 +54,6 @@ const Navbar = () => {
         {isOpen ? <X size={32} /> : <Menu size={32} />}
       </button>
 
-      {/* Menu untuk Mobile */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -78,7 +75,7 @@ const Navbar = () => {
                           : "border-transparent hover:text-white hover:border-amber-400"
                       }`
                     }
-                    onClick={() => setIsOpen(false)} // Tutup menu saat klik
+                    onClick={() => setIsOpen(false)} 
                   >
                     {item}
                   </NavLink>

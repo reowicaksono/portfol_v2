@@ -39,7 +39,6 @@ const HomeView = () => {
         {/* Hero Section */}
         <main className="flex flex-col-reverse md:flex-row items-center justify-center gap-16 md:gap-28 mt-20">
           
-          {/* Animasi untuk teks */}
           <motion.div 
             initial={{ x: -100, opacity: 0 }} 
             animate={{ x: 0, opacity: 1 }} 
@@ -77,7 +76,6 @@ const HomeView = () => {
             </div>
           </motion.div>
 
-          {/* Animasi untuk gambar */}
           <motion.div 
             initial={{ x: 100, opacity: 0 }} 
             animate={{ x: 0, opacity: 1 }} 
