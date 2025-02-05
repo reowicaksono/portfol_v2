@@ -1,2 +1,28 @@
 @import "tailwindcss";
 @import "tailwindcss/utilities";
+
+@layer base {
+    body {
+      @apply bg-black text-white;
+    }
+  }
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #1e1e1f;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #fbbf24; /* Amber */
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d97706; /* Lebih gelap saat hover */
+  }
+    
